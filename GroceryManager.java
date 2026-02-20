@@ -38,6 +38,26 @@ public class GroceryManager {
     }
 
     /**
+    * Restocks an item by searching for its name and increasing its stock.
+    * If the item is not found after scanning the entire array, prints "Item not found."
+    *
+    * @param names  array of item names (null means empty slot)
+    * @param stocks array of stock counts corresponding to item names
+    * @param target the item name to search for
+    * @param amount the amount to add to the item's stock
+    */
+    public static void restockItem(String[] names, int[] stocks, String target, int amount) {
+        for (int i = 0; i < names.length; i++) {
+            if (names[i] != null && names[i].equalsIgnoreCase(target)) {
+                stocks[i] += amount;
+                return;
+            }
+        }
+
+        System.out.println("Item not found.");
+    }
+
+    /**
      * Temporary main method for testing Task 1 only.
      * The teammate doing Task 3 will replace this with the final menu system.
      */
@@ -62,5 +82,17 @@ public class GroceryManager {
 
         // Test the Task 1 method
         printInventory(itemNames, itemPrices, itemStocks);
+
+        // Test Task 2
+        System.out.println("\n--- Restocking Apples by 5 ---");
+        restockItem(itemNames, itemStocks, "Apples", 5);
+
+        // Print inventory again to verify change
+        printInventory(itemNames, itemPrices, itemStocks);
+
+        // Item not found case
+        System.out.println("\n--- Trying to restock Bananas ---");
+        restockItem(itemNames, itemStocks, "Bananas", 3);
+
     }
 }
