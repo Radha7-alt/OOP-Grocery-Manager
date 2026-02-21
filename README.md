@@ -55,6 +55,7 @@ javac GroceryManager.java
 Run:
 
 java GroceryManager
+
 📄 **Documentation (Javadoc)**
 
 Javadoc is generated inside the docs/ folder:
