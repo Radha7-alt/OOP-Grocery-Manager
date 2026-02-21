@@ -1,8 +1,8 @@
-📦 OOP Grocery Manager
+📦 **OOP Grocery Manager**
 
 A group project for CS 3354 – Object-Oriented Programming demonstrating teamwork, Git branching workflow, and implementation of a grocery inventory manager using parallel arrays in Java.
 
-👥 Team Members
+👥 **Team Members**
 
 Radha Kumari Yadav – Task 1 (Inventory Display), Repository Owner
 
@@ -10,7 +10,7 @@ Justin Andrade – Task 2 (Restock & Search)
 
 Snow Karki – Task 3 (Menu System)
 
-🧩 Project Overview
+🧩 **Project Overview**
 
 This project uses three parallel arrays to store grocery item data:
 
@@ -42,7 +42,7 @@ Implements user input and integrates Tasks 1 & 2:
 1 – View Inventory
 2 – Restock Item
 3 – Exit
-🧪 How to Run
+🧪 **How to Run**
 
 Clone the repository:
 
@@ -55,7 +55,7 @@ javac GroceryManager.java
 Run:
 
 java GroceryManager
-📄 Documentation (Javadoc)
+📄 **Documentation (Javadoc)**
 
 Javadoc is generated inside the docs/ folder:
 
